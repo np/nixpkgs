@@ -1,4 +1,4 @@
-{ stdenv, fetchurl, perl, git }:
+{ stdenv, fetchurl, perl, git, openssh }:
 
 stdenv.mkDerivation rec {
   name = "gitolite-${version}";
@@ -9,7 +9,7 @@ stdenv.mkDerivation rec {
     sha256 = "0sizzv705aypasi9vf9kmdbzcl3gmyfxg9dwdl5prn64biqkvq3y";
   };
 
-  buildInputs = [ perl git ];
+  buildInputs = [ perl git openssh ];
   buildPhase = "true";
 
   patchPhase = ''
