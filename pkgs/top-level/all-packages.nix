@@ -501,6 +501,10 @@ with pkgs;
     pkgs_i686 = pkgsi686Linux;
   };
 
+  android-file-transfer = callPackage ../applications/misc/android-file-transfer {
+    qtbase = qt5.qtbase;
+  };
+
   adb-sync = callPackage ../development/mobile/adb-sync { };
 
   apg = callPackage ../tools/security/apg { };
