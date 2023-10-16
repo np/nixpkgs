@@ -6,7 +6,7 @@ let
     inherit (stdenv.hostPlatform) system;
   };
 in
-nodePackages.n8n.override {
+nodePackages."n8n-1.10.0".override {
   nativeBuildInputs = [
     pkgs.nodePackages.node-pre-gyp
     pkgs.which
