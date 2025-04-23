@@ -361,6 +361,8 @@ package-maintainers:
     - lhs2tex
     - rec-def
     - tasty-expected-failure
+  np:
+    - git-annex
   peti:
     - cabal2spec
     - funcmp
