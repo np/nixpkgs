@@ -5219,6 +5219,8 @@ self: super: with self; {
 
   fountains = callPackage ../development/python-modules/fountains { };
 
+  fowl = toPythonModule (pkgs.fowl.override { python3Packages = self; });
+
   foxdot = callPackage ../development/python-modules/foxdot { };
 
   fpdf = callPackage ../development/python-modules/fpdf { };
