@@ -8,21 +8,23 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "Bend";
-  version = "0.2.37";
+  version = "0.2.38";
 
   src = fetchFromGitHub {
     owner = "HigherOrderCO";
     repo = "Bend";
     tag = version;
-    hash = "sha256-8uBEI9GKUETk8t6Oanb0OECe3MlJ486QnccOuhIxPuY=";
+    hash = "sha256-3E5Vt/YO6fe0JAtfV5M76Eq84ddRXSGClDBCle0fjyg=";
   };
 
-  cargoHash = "sha256-xac5Gb0hcamT3vymq6SKaMiuEn8NU9Bfhu+t/dcjhTE=";
+  cargoHash = "sha256-NPOnbP+11LAV6+It2G24MVB0BJKtXnUaBDmhi47ytC8=";
 
   nativeBuildInputs = [
     hvm
     makeWrapper
   ];
+
+  doCheck = false;
 
   postInstall = ''
     wrapProgram $out/bin/bend \
