@@ -8229,7 +8229,6 @@ self: super: with self; {
 
   keepkey = callPackage ../development/python-modules/keepkey { };
 
-  keepkey-agent = callPackage ../development/python-modules/keepkey-agent { };
 
   kegtron-ble = callPackage ../development/python-modules/kegtron-ble { };
 
@@ -8573,7 +8572,6 @@ self: super: with self; {
       }
     )).py;
 
-  ledger-agent = callPackage ../development/python-modules/ledger-agent { };
 
   ledger-bitcoin = callPackage ../development/python-modules/ledger-bitcoin { };
 
@@ -19703,9 +19701,7 @@ self: super: with self; {
 
   trezor = callPackage ../development/python-modules/trezor { };
 
-  trezor-agent = callPackage ../development/python-modules/trezor-agent {
-    pinentry = pkgs.pinentry-curses;
-  };
+  trezor-agent = callPackage ../development/python-modules/trezor-agent { };
 
   trie = callPackage ../development/python-modules/trie { };
 

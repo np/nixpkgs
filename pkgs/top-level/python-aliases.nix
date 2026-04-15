@@ -284,7 +284,8 @@ mapAliases {
   jupyterlab_server = throw "'jupyterlab_server' has been renamed to/replaced by 'jupyterlab-server'"; # Converted to throw 2025-10-29
   kafka-python = throw "'kafka-python' has been renamed to/replaced by 'kafka-python-ng'"; # Converted to throw 2025-10-29
   Kajiki = throw "'Kajiki' has been renamed to/replaced by 'kajiki'"; # Converted to throw 2025-10-29
-  keepkey_agent = throw "'keepkey_agent' has been renamed to/replaced by 'keepkey-agent'"; # Converted to throw 2025-10-29
+  keepkey_agent = throw "'keepkey_agent' has been removed because upstream dropped keepkey support"; # Added 2026-03-30
+  keepkey-agent = throw "'keepkey-agent' has been removed because upstream dropped keepkey support"; # Added 2026-03-30
   Keras = throw "'Keras' has been renamed to/replaced by 'keras'"; # Converted to throw 2025-10-29
   keyrings-passwordstore = throw "keyrings-passwordstore has been removed because it has been marked as broken since at least November 2024."; # Added 2025-10-03
   kivy-garden-modernmenu = throw "kivy-garden-modernmenu has been removed as it's abandoned since 2019"; # added 2025-05-25
@@ -296,7 +297,8 @@ mapAliases {
   lazy_imports = throw "'lazy_imports' has been renamed to/replaced by 'lazy-imports'"; # Converted to throw 2025-10-29
   lcov_cobertura = throw "'lcov_cobertura' has been renamed to/replaced by 'lcov-cobertura'"; # Converted to throw 2025-10-29
   ldap = throw "'ldap' has been renamed to/replaced by 'python-ldap'"; # Converted to throw 2025-10-29
-  ledger_agent = throw "'ledger_agent' has been renamed to/replaced by 'ledger-agent'"; # Converted to throw 2025-10-29
+  ledger_agent = throw "'ledger_agent' has been removed because upstream dropped ledger support"; # Added 2026-03-30
+  ledger-agent = throw "'ledger-agent' has been removed because upstream dropped ledger support"; # Added 2026-03-30
   libgpiod = gpiod; # added 2026-03-30
   libpyfoscam = throw "libpyfoscam was removed because Home Assistant switched to libpyfoscamcgi"; # added 2025-07-03
   line_profiler = throw "'line_profiler' has been renamed to/replaced by 'line-profiler'"; # Converted to throw 2025-10-29
